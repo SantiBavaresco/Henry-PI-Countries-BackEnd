@@ -34,7 +34,7 @@ async function createCountryActivity ({name, difficulty, duration, season, array
         {name, difficulty, duration, season});
 
     arrayCountries.forEach(async(element) => {
-        element = element.toUpperCase()
+        element = element?.toUpperCase()
         await newActivity.addCountry(element)
     });
     
